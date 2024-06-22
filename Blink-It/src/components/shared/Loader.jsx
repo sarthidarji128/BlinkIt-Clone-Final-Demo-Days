@@ -12,4 +12,4 @@ const Loader = ({ fullscreen }) => {
   };
   
   export default Loader;
-  
+
