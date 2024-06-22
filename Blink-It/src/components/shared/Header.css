@@ -42,7 +42,7 @@
   }
   
   .name::before{
-    content: "BlinkIt";
+    content: "WinkIt";
     position: absolute;
     width: 0%;
     height: 100%;
