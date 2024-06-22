@@ -35,3 +35,4 @@ const Layout = ({ noFooter, component }) => {
 };
 
 export default Layout;
+
