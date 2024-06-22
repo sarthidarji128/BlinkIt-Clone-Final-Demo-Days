@@ -1,5 +1,6 @@
 import { ItemsCarousel } from '../home';
-
+import React from 'react';
+import './MoreProducts.css'
 const MoreProducts = ({ title, products }) => {
   return (
     <section className="mt-2">
