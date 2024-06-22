@@ -289,7 +289,7 @@ const PaymentPage = ({ onClose, selectedSlot }) => {
             )}
 
             <br />
-            <button type="submit" disabled={!selectedMethod}>
+            <button className="v" type="submit" disabled={!selectedMethod}>
               Proceed to Pay
             </button>
           </form>
