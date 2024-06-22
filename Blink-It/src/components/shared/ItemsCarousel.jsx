@@ -78,3 +78,4 @@ const ItemsCarousel = (props) => {
 };
 
 export default ItemsCarousel;
+
