@@ -1,0 +1,16 @@
+.w-9{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 26px;
+}
+
+.bt{
+    border: none;
+    background-color: white;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+}
