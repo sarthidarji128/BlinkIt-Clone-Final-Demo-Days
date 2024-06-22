@@ -22,7 +22,7 @@ const Error404 = () => {
             </small>
             <br />
             <small className="text-[#0c831f] cursor-pointer">
-              Learn about BlinkIt
+              Learn about WinkIt
             </small>
           </p>
         </div>
