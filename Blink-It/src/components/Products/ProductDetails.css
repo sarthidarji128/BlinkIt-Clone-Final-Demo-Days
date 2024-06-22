@@ -1,0 +1,119 @@
+/* ProductDetails.css */
+
+.product-details-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: -0.5rem; /* -mt-2 */
+    border-bottom: 1px solid #e5e7eb; /* border-gray-200 */
+  
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+      border-right: 1px solid #e5e7eb; /* border-gray-200 */
+    }
+  }
+  
+  .product-gallery-section {
+    border-right: 1px solid #e5e7eb; /* border-gray-200 */
+  
+    @media (min-width: 1024px) {
+      padding-right: 1.5rem; /* pr-12 */
+      padding-top: 2rem; /* pt-8 */
+    }
+  }
+  
+  .product-info-section {
+    position: static;
+  
+    @media (min-width: 1024px) {
+      position: sticky;
+      top: 5rem; /* top-20 */
+    }
+  
+    padding-left: 1rem; /* px-4 */
+    padding-right: 1rem; /* px-4 */
+  
+    @media (min-width: 1024px) {
+      padding-left: 3rem; /* lg:pl-12 */
+      padding-top: 2rem; /* lg:pt-8 */
+    }
+  }
+  
+  .product-title {
+    font-size: 2.25rem; /* text-4xl */
+    line-height: 1.25; /* leading-tight */
+    padding: 0.75rem 0; /* py-3 */
+    font-weight: bold;
+    color: #1f2937; /* text-gray-800 */
+  }
+  
+  .product-brand {
+    color: #047857; /* text-green-700 */
+    font-weight: 600; /* font-semibold */
+    font-size: 1.125rem; /* text-lg */
+    display: flex;
+    align-items: center;
+  
+    svg {
+      margin-left: 0.25rem; /* ml-1 */
+    }
+  }
+  
+  .product-details-title {
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: bold;
+    color: #1f2937; /* text-gray-800 */
+  }
+  
+  .product-attribute-list {
+    padding-top: 2rem; /* pt-8 */
+  }
+  
+  .product-add-to-cart {
+    margin: 1rem 0; /* my-4 */
+    height: 3rem; /* h-12 */
+    width: 8rem; /* w-32 */
+  }
+  
+  .additional-info {
+    margin-top: 2rem; /* mt-8 */
+  }
+  
+  .benefits-section {
+    padding-bottom: 1rem; /* pb-4 */
+    display: none;
+  
+    @media (min-width: 1024px) {
+      display: block;
+    }
+  
+    .benefits-title {
+      font-weight: bold;
+      color: #1f2937; /* text-gray-800 */
+      font-size: 1rem; /* text-base */
+      padding: 0.75rem 0; /* py-3 */
+    }
+  
+    .benefit-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem; /* gap-3 */
+      padding: 0.25rem 0; /* py-1 */
+  
+      img {
+        width: 3rem; /* w-12 */
+        height: 3rem; /* h-12 */
+      }
+  
+      .benefit-text {
+        font-size: 0.875rem; /* text-sm */
+        color: #000; /* text-black */
+      }
+  
+      .benefit-description {
+        font-size: 0.75rem; /* text-xs */
+        color: #6b7280; /* text-gray-500 */
+      }
+    }
+  }
+  

@@ -1,0 +1,99 @@
+/* Custom CSS for ProductGallery Component */
+
+/* Flex container for main gallery layout */
+.product-gallery-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 1rem;
+  }
+  
+  /* Container for the main image */
+  .product-gallery-main-image-container {
+    display: none;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .product-gallery-main-image-container img {
+    height: 24rem;
+    width: 24rem;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .product-gallery-main-image-container img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Make the main image container visible on large screens */
+  @media (min-width: 1024px) {
+    .product-gallery-main-image-container {
+      display: flex;
+    }
+  }
+  
+  /* Container for the carousel */
+  .product-gallery-carousel-container {
+    width: 100%;
+    position: relative;
+    margin: 0 2.5rem;
+  }
+  
+  /* Adjusting carousel width and height */
+  .product-gallery-carousel {
+    width: 80%;
+    margin: 0 auto;
+    height: 19rem;
+    margin-top: 0.625rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Carousel items styling */
+  .product-gallery-carousel-item {
+    width: 24rem;
+    height: 24rem;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    border: 2px solid transparent;
+    overflow: hidden;
+    transition: border-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .product-gallery-carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .product-gallery-carousel-item:hover {
+    border-color: #10b981;
+    transform: scale(1.05);
+  }
+  
+  .product-gallery-carousel-item.active {
+    border-color: #10b981;
+  }
+  
+  .product-gallery-carousel-item.inactive {
+    border-color: #e5e7eb;
+  }
+  
+  /* Carousel dots customization */
+  .product-gallery-carousel-dots {
+    display: none;
+    bottom: -1rem;
+  }
+  
+  @media (max-width: 1024px) {
+    .product-gallery-carousel-dots {
+      display: block;
+    }
+  }
+  

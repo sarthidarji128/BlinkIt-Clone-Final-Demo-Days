@@ -1,0 +1,42 @@
+/* Custom CSS for ProductInfoList Component */
+
+/* Padding for the main container */
+.product-info-list-container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #f9fafb;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for the definition list */
+  .product-info-list dl {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Styling for the title of each attribute */
+  .product-info-list dt {
+    font-size: 0.875rem;
+    font-weight: 800;
+    color: #111827;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .product-info-list dt:hover {
+    color: #10b981;
+  }
+  
+  /* Styling for the value of each attribute */
+  .product-info-list dd {
+    font-size: 0.875rem;
+    color: #4b5563;
+    margin-bottom: 1rem;
+  }
+  
+  /* Adding hover effects to the list items */
+  .product-info-list dd:hover {
+    color: #1f2937;
+  }
+  

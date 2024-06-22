@@ -1,0 +1,57 @@
+/* MoreProducts.css */
+
+.more-products {
+    margin-top: 0.5rem; /* mt-2 */
+  }
+  
+  .more-products-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem; /* h-16 */
+    padding: 0 1rem; /* px-4 */
+  }
+  
+  .more-products-title {
+    font-weight: 600; /* font-semibold */
+    font-size: 1.5rem; /* text-[24px] */
+    color: #1f2937; /* _text-default */
+    padding-left: 1rem; /* px-4 */
+  }
+  
+  @media (min-width: 1024px) {
+    .more-products-header {
+      padding: 0; /* lg:px-0 */
+    }
+  }
+  
+  .items-carousel-container {
+    margin-top: 1rem;
+    padding: 0 1rem; /* px-4 */
+  }
+  
+  @media (min-width: 1024px) {
+    .items-carousel-container {
+      padding: 0; /* lg:px-0 */
+    }
+  }
+  
+  /* Additional Premium Styling */
+  .more-products-header {
+    background: linear-gradient(90deg, rgba(12, 131, 31, 0.1), rgba(255, 255, 255, 0));
+    border-radius: 8px;
+    transition: background 0.3s ease;
+  }
+  
+  .more-products-header:hover {
+    background: linear-gradient(90deg, rgba(12, 131, 31, 0.2), rgba(255, 255, 255, 0));
+  }
+  
+  .more-products-title {
+    transition: color 0.3s ease;
+  }
+  
+  .more-products-title:hover {
+    color: #0c831f;
+  }
+  

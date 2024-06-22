@@ -1,0 +1,62 @@
+/* Breadcrumb.css */
+
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.75rem; /* text-xs */
+    color: #000;
+    font-weight: 500; /* font-medium */
+    align-items: center;
+  }
+  
+  .breadcrumb span {
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .breadcrumb span:hover {
+    color: #0c831f;
+  }
+  
+  .breadcrumb a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .breadcrumb a:hover {
+    color: #0c831f;
+  }
+  
+  .breadcrumb .separator {
+    margin: 0 0.25rem; /* spacing between breadcrumb items */
+  }
+  
+  .breadcrumb ._text-muted {
+    color: #6b7280; /* muted text color */
+  }
+  
+  .breadcrumb ._text-muted:hover {
+    color: #6b7280; /* ensure muted color stays muted on hover */
+  }
+  
+  .breadcrumb-home::before {
+    content: url('/path/to/home-icon.svg'); /* Custom home icon */
+    display: inline-block;
+    margin-right: 0.25rem;
+    vertical-align: middle;
+  }
+  
+  .breadcrumb-category::before,
+  .breadcrumb-subcategory::before {
+    content: '>';
+    display: inline-block;
+    margin: 0 0.25rem;
+    color: #b0b0b0; /* light gray for arrows */
+  }
+  
+  @media (min-width: 768px) {
+    .breadcrumb {
+      font-size: 0.875rem; /* slightly larger text on larger screens */
+    }
+  }
+  
