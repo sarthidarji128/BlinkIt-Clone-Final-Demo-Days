@@ -1,0 +1,58 @@
+.cart-button {
+  background-color: #0c831f;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cart-button:hover {
+  background-color: #0a6a19;
+}
+
+._wiggle {
+  color: green;
+  transition: color 0.3s ease;
+}
+
+.cart-button:hover .cart-icon {
+  color: black;
+}
+
+.cart-button .tracking-tight {
+  margin-top: 4px;
+}
+
+.cart-button .flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.flexshop{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.s a{
+  color: black;
+  text-decoration: none; /* Remove underline */
+}
+
+.flexshop {
+  display: flex;
+  align-items: center;
+}
+._wiggle {
+  animation: wiggle 0.5s infinite;
+}
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-5deg); }
+  100% { transform: rotate(5deg); }
+}
+.s a {
+  color: white;
+  text-decoration: none;
+}
+.s a:hover {
+  text-decoration: underline;
+}

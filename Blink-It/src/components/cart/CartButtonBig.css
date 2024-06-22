@@ -1,0 +1,51 @@
+/* CartButtonBig.css */
+
+._fab {
+    background: linear-gradient(90deg, #0c831f, #119b2b);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  ._fab:hover {
+    background: linear-gradient(90deg, #119b2b, #0c831f);
+    transform: translateY(-2px);
+  }
+  
+  ._fab:active {
+    background: linear-gradient(90deg, #0c831f, #119b2b);
+    transform: translateY(0);
+  }
+  
+  ._fab .flex-col span {
+    transition: color 0.3s ease;
+  }
+  
+  ._fab .flex-col span:nth-child(2) {
+    color: #e0ffe6;
+  }
+  
+  ._fab .flex-col span:nth-child(2) .opacity-80 {
+    opacity: 0.6;
+  }
+  
+  ._fab .flex-col span:nth-child(2) .opacity-80:hover {
+    opacity: 1;
+  }
+  
+  ._fab .flex-col span:nth-child(2) .text-xs {
+    font-size: 0.75rem;
+  }
+  
+  ._fab .ml-auto {
+    display: flex;
+    align-items: center;
+  }
+  
+  ._fab .ml-auto svg {
+    transition: transform 0.3s ease;
+  }
+  
+  ._fab .ml-auto:hover svg {
+    transform: translateX(5px);
+  }
+  
