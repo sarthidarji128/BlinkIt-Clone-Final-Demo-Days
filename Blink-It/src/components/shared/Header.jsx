@@ -11,7 +11,7 @@ const Header = () => {
         <div className="hidden sm:flex max-w-[150px] md:max-w-[178px] w-full cursor-pointer sm:hover:bg-gray-50 items-center justify-center border-r _border-light">
           <Link to={'/'}>
             <span className="name">
-              BlinkIt
+              WinkIt
             </span>
           </Link>
         </div>
