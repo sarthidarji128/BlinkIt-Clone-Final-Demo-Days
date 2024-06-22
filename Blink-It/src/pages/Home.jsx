@@ -8,13 +8,13 @@ import {
   ProductsRow,
 } from '../components/home';
 import Misc from '../lib/data/layout.json';
-
+import './Home.css'
 const Home = () => {
   const productItems = Misc.filter((item) => item.type === 77).map(
     (el) => ({
       data: el.data,
       objects: el.objects,
-    })
+    })  
   );
 
   return (
