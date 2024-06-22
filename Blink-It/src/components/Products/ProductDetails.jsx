@@ -9,9 +9,9 @@ import ProductGallery from './ProductGallery';
 import ProductInfoList from './ProductInfoList';
 import ProductVarients from './ProductVarients';
 import { ProductItemDetailed } from '../../utils/types';
-// src/components/Products/ProductDetails.jsx
-
+import React from 'react';
 import BrandPromotion from '../BrandPromotion';
+import './ProductDetails.css'
 // Ensure the path '../BrandPromotion' is correct relative to the location of ProductDetails.jsx
 
 const ProductDetails = (props) => {
