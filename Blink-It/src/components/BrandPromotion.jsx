@@ -55,7 +55,7 @@ const BrandPromotion = () => {
                   </div>
                   <div className="flex flex-col justify-center">
                     <p className="font-extrabold text-lg max-w-[300px] _text-default">
-                      Simple way to download the BlinkIt app
+                      Simple way to download the WinkIt app
                     </p>
                     <span className="text-sm _text-default">
                       Scan QR code and download now
@@ -64,7 +64,7 @@ const BrandPromotion = () => {
                 </div>
                 <div className="block lg:hidden mt-6">
                   <h4 className="font-semibold text-md leading-none mb-4">
-                    Download the BlinkIt App Now
+                    Download the WinkIt App Now
                   </h4>
                 </div>
               </div>
@@ -72,7 +72,7 @@ const BrandPromotion = () => {
           </div>
           <div className="border-b _border-light pt-2 pb-10">
             <p className="text-sm _text-default">
-              "BlinkIt" is owned & managed by "BlinkIt Commerce Private Limited"
+              "WinkIt" is owned & managed by "WinkIt Commerce Private Limited"
             </p>
           </div>
         </div>
