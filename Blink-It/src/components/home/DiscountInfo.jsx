@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { IoClose } from 'react-icons/io5';
-
+import React from 'react';
+import './DiscountInfo.css'
 const DiscountInfo = ({ data, onClose }) => {
   const [codeCopied, setCodeCopied] = useState(false);
 
