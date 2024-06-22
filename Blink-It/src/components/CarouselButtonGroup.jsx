@@ -1,5 +1,5 @@
 import { IoChevronBack, IoChevronForwardSharp } from 'react-icons/io5';
-
+import './CarouselButtonGroup.css'
 const CarouselButton = (props) => {
   const icon =
     props.icon === 'prev' ? (
@@ -9,7 +9,7 @@ const CarouselButton = (props) => {
     );
   return (
     <button
-      className="bg-white h-9 w-9 _fab"
+      className="bt"
       type="button"
       onClick={props.onButtonClick}
     >
@@ -25,15 +25,17 @@ const CarouselButtonGroup = ({ next, previous, ...rest }) => {
 
   return (
     <>
-      <div className="w-9 flex items-center z-10 absolute right-auto top-0 bottom-0 -left-4">
+    <div className="w-9">
+      <div>
         {currentSlide !== 0 && (
-          <CarouselButton icon="prev" onButtonClick={() => previous()} />
+          <CarouselButton className="bt" icon="prev" onButtonClick={() => previous()} />
         )}
       </div>
-      <div className="w-9 flex items-center z-10 absolute top-0 -right-4 bottom-0 left-auto">
+      <div >
         {currentSlide < totalItems - slidesToShow && (
-          <CarouselButton icon="next" onButtonClick={() => next()} />
+          <CarouselButton className="bt" icon="next" onButtonClick={() => next()} />
         )}
+      </div>
       </div>
     </>
   );
