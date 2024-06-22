@@ -5,7 +5,7 @@ import Offers from '../../lib/data/discountOffers.json';
 import CarouselButtonGroup from '../CarouselButtonGroup';
 import 'react-multi-carousel/lib/styles.css';
 import React, { useState } from 'react';
-
+import './DiscountOffers.css'
 const responsive = {
   uhdDesktop: {
     breakpoint: { max: 1920, min: 1601 },
@@ -70,7 +70,7 @@ const DiscountCard = ({ data }) => {
 
   return (
     <div
-      className="border border-blue-600 rounded-lg cursor-pointer mr-4 lg:w-[277px] h-[188px] _coupon overflow-hidden flex flex-col"
+      className="bd border-blue-600 rounded-lg cursor-pointer mr-4 lg:w-[277px] h-[188px] _coupon overflow-hidden flex flex-col"
       onClick={showDiscountInfo}
     >
       <div className="p-4">
@@ -86,7 +86,7 @@ const DiscountCard = ({ data }) => {
         </h5>
         <p className="text-xs _text-default">{data.subtitle}</p>
       </div>
-      <div className="bg-[#f6fbff] py-3 px-4 flex items-center justify-between mt-auto">
+      <div className="p-5">
         <div className="flex flex-col">
           <small className="text-[10px] font-medium _text-muted">
             {data.offer.key}
@@ -98,7 +98,7 @@ const DiscountCard = ({ data }) => {
         <button
           type="button"
           onClick={(e) => copyCouponCode(e, data.offer.value)}
-          className="bg-[#1f1f1f] text-white w-[104px] rounded-lg font-medium lowercase text-sm leading-none px-4 py-1.5 h-7"
+          className="button-17"
         >
           {codeCopied ? 'Copied' : data.button_cta_text}
         </button>
