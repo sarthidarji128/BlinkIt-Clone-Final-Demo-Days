@@ -50,7 +50,7 @@ const ProductDetails = (props) => {
             </div>
             <div className="pb-4 hidden lg:block">
               <h4 className="font-bold text-gray-800 text-base py-3">
-                Why shop from BlinkIt?
+                Why shop from WinkIt?
               </h4>
               {allFeatures.map((feat, i) => (
                 <div key={i} className="flex items-center gap-3 py-1">
