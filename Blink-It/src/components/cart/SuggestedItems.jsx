@@ -4,6 +4,8 @@ import { ProductItem } from '../../utils/types';
 import CarouselButtonGroup from '../CarouselButtonGroup';
 import ProductCard from '../ProductCard';
 import 'react-multi-carousel/lib/styles.css';
+import React from 'react';
+
 
 const responsive = {
   desktop: {
