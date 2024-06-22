@@ -3,7 +3,7 @@ import CarouselButtonGroup from '../CarouselButtonGroup';
 import { shuffleItems } from '../../utils/helper';
 import 'react-multi-carousel/lib/styles.css';
 import Misc from '../../lib/data/layout.json';
-
+import './HighlightedPromo.css'
 const responsive = {
   allScreen: {
     breakpoint: { max: 1920, min: 0 },
