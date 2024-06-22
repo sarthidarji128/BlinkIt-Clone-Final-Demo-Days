@@ -3,7 +3,7 @@ import CarouselButtonGroup from '../CarouselButtonGroup';
 import { shuffleItems } from '../../utils/helper';
 import Misc from '../../lib/data/layout.json';
 import 'react-multi-carousel/lib/styles.css';
-
+import './FeaturedPromo.css'
 const responsive = {
   uhdDesktop: {
     breakpoint: { max: 1920, min: 1601 },
@@ -55,19 +55,20 @@ const FeaturedPromo = () => {
           renderButtonGroupOutside={true}
           customButtonGroup={<CarouselButtonGroup />}
           shouldResetAutoplay={false}
-          infinite={false}
+          infinite={true}
+          autoPlay={true}
+          autoPlaySpeed={2500}
           itemClass="mr-2"
           partialVisible
         >
           {promos?.map((promo, i) => (
             <div
               key={i}
-              className="rounded-lg w-full lg:w-[360px] cursor-pointer max-h-[280px] sm:h-[200px] overflow-hidden"
             >
               <img
                 src={promo}
                 alt="..."
-                className="h-full w-full object-cover"
+                className="banner"
               />
             </div>
           ))}
