@@ -28,3 +28,4 @@ const modalSlice = createSlice({
 
 export default modalSlice.reducer;
 export const { show, hide } = modalSlice.actions;
+
