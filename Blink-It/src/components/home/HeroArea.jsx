@@ -1,3 +1,5 @@
+import React from "react";
+import './HeroArea.css'
 const HeroArea = () => {
     const ads = [
       {
@@ -13,17 +15,20 @@ const HeroArea = () => {
     ];
   
     return (
-      <section className="mt-4 md:mt-0">
-        {ads.map((ad) => (
-          <div key={ad.id}>
+      <section>
+        <img className="bannerimg" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=2700/layout-engine/2022-05/Group-33704.jpg" alt="ad-1" />
+        {/* {ads.map((ad) => (
+          <div key={ad.id} className="ban">
             <img
               src={ad.banner}
               alt=""
-              className="h-full w-full hidden sm:block"
+              className="h-full w-full hidden sm:block md:ml-2"
             />
-            <img src={ad.banner_sm} alt="" className="h-full w-full sm:hidden" />
+            <div>
+            <img src="ad-1.p" alt="" className="h-full w-full sm:hidden md:ml-2" />
+            </div>
           </div>
-        ))}
+        ))} */}
       </section>
     );
   };
