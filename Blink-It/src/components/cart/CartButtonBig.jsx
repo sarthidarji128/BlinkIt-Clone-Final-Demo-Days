@@ -1,7 +1,8 @@
 import { IoCaretForwardSharp } from 'react-icons/io5';
 import { useDispatch, useSelector } from 'react-redux';
 import { showCart } from '../../store/ui';
-
+import React from 'react';
+import './CartButtonBig.css'
 const CartButtonBig = () => {
   const { billAmount, totalQuantity, totalAmount } = useSelector(
     (state) => state.cart
