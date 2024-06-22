@@ -4,7 +4,7 @@ import { useAppDispatch } from '../../hooks/useAppDispatch';
 import { useAppSelector } from '../../hooks/useAppSelector';
 import { addItem, removeItem } from '../../store/cart';
 import { CartProduct } from '../../utils/types';
-
+import './AddToCartButton.css'
 const AddToCartButton = ({ product, size }) => {
   const { cartItems } = useAppSelector((state) => state.cart);
   const dispatch = useAppDispatch();
@@ -30,19 +30,19 @@ const AddToCartButton = ({ product, size }) => {
   };
 
   return itemCount > 0 ? (
-    <div className={`flex h-full w-full justify-around rounded-lg uppercase font-bold text-sm bg-[#0c831f] cursor-pointer ${size === 'lg' ? 'text-lg' : 'text-normal'}`}>
-      <button onClick={(e) => remove(e)} type="button" className="flex items-center justify-center w-8">
+    <div className="l">
+      <button onClick={(e) => remove(e)} type="button" className="b">
         <IoRemoveSharp size={18} className="text-white" />
       </button>
       <span className="flex items-center justify-center text-white">
         {itemCount}
       </span>
-      <button onClick={(e) => add(e)} type="button" className="flex items-center justify-center w-8">
+      <button onClick={(e) => add(e)} type="button" className="b">
         <IoAddSharp size={18} className="text-white" />
       </button>
     </div>
   ) : (
-    <button type="button" className={`_add_to_cart ${size === 'lg' ? 'text-md' : 'text-sm'}`} onClick={(e) => handleItemAdd(e)}>
+    <button type="button" className=" btn" onClick={(e) => handleItemAdd(e)}>
       Add
     </button>
   );
