@@ -7,7 +7,8 @@ import AddToCartButton from '../shared/AddToCartButton';
 import Misc from '../../lib/data/layout.json';
 import SuggestedItems from './SuggestedItems';
 import { shuffleItems } from '../../utils/helper';
-
+import React from 'react';
+import './CartPanel.css'
 const CartPanelItem = (props) => {
   const { image, title, subTitle, price, mrp } = props.product;
   return (
