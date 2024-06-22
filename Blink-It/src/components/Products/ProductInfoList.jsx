@@ -1,6 +1,6 @@
 import React from 'react';
 import { Attribute, AttributeCollection } from '../../utils/types';
-
+import './ProductInfoList.css'
 const ProductInfoList = (props = []) => {
   const allAttr = [];
   Object.values(props).forEach((prop) => allAttr.push(...prop.attributes));
