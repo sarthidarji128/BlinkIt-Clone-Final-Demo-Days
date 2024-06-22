@@ -56,3 +56,22 @@
 .s a:hover {
   text-decoration: underline;
 }
+
+.v {
+  height: 40px;
+  background-color: green;
+  color: white;
+  border-radius: 10px;
+  transition: background-color 0.3s, transform 0.3s;
+  width: 400px;
+  margin-left: 100px;
+}
+
+.v:hover {
+  background-color: darkgreen;
+  transform: scale(1.05);
+}
+
+.v:active {
+  transform: scale(0.98);
+}
