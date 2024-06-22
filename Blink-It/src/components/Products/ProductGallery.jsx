@@ -2,7 +2,8 @@ import { useState } from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import CarouselButtonGroup from '../CarouselButtonGroup';
-
+import React from 'react';
+import './ProductGallery.css'
 const responsive = {
   desktop: {
     breakpoint: { max: 1920, min: 1440 },
