@@ -1,0 +1,192 @@
+
+
+._nav {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  ._nav {
+    padding-left: 0.5rem;  /* px-2 */
+    padding-right: 0.5rem; /* px-2 */
+    padding-top: 8px;
+    padding-top: 5px;
+    border-radius: 20px; /* rounded-md */
+    position: sticky; /* sticky */
+    top: 0; /* top-0 */
+    background-color: white; /* Ensure the header has a background */
+    z-index: 10; /* Ensure the header is above other content */
+    margin-left: 1rem; /* Add margin-left to prevent overlapping */
+    margin-right: 1rem; /* Add margin-right to prevent overlapping */
+  }
+  
+  
+  /* Responsive padding for small screens (sm:px-0) */
+  @media (min-width: 640px) {
+    ._nav {
+      padding-left: 0;  
+      padding-right: 0; 
+    }
+  }
+  
+  .name{
+    width: 67px;
+    color: green;
+    letter-spacing: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .name{
+    color: transparent;
+    -webkit-text-stroke: 1px green;
+    position: relative;
+  }
+  
+  .name::before{
+    content: "BlinkIt";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    color: green;
+    border-right: 1px solid  green;
+    transition: 1s ease-in-out;
+  }
+
+  .name:hover::before{
+    width: 100%;
+    filter: drop-shadow(0 0 0.2px green);
+  }
+  ._header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  ._header div {
+    transition: background-color 0.3s ease;
+  }
+  
+  ._header div:hover {
+    background-color: #ffffff;
+  }
+  
+  ._header a {
+    text-decoration: none;
+  }
+  
+  ._header a span {
+    display: flex;
+    align-items: center;
+  }
+  
+  ._header a span.font-black {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  ._header_loc {
+    padding: 1rem;
+    border-right: 1px solid #ffffff;
+  }
+  
+  ._header_search {
+    padding: 0 1rem;
+  }
+  
+  ._header_login {
+    padding: 1rem;
+    border-left: 1px solid #ffffff;
+  }
+  
+  ._text-default {
+    color: #000000;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  ._text-default:hover {
+    color: #007bff;
+  }
+  
+  @media (min-width: 640px) {
+    ._nav {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  
+    ._header_loc {
+      padding: 0;
+      justify-content: center;
+    }
+  
+    ._header_login {
+      justify-content: center;
+      max-width: 160px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    ._header_search {
+      padding: 0 2rem;
+    }
+  
+    ._header_login {
+      max-width: 200px;
+    }
+  }
+  
+/* LoginButton.css */
+
+.login-button {
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #ffffff;
+}
+
+.login-button:hover .icon-default {
+  color: black; /* Change icon color to green on hover */
+}
+
+.text-default {
+  color: #333;
+  font-size: 16px;
+}
+
+.icon-default {
+  color: green;
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.login-link {
+  color: black;
+  text-decoration: none; /* Remove underline */
+}
+
+.login-link:hover {
+  color: black; /* Maintain black color on hover */
+}
+
+@media (max-width: 640px) {
+  .login-button {
+    max-width: 80px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .login-button {
+    max-width: 160px;
+  }
+}
+
+.font-medium {
+  font-weight: 500;
+}

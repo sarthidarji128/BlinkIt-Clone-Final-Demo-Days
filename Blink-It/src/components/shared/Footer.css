@@ -1,0 +1,42 @@
+.cat{
+
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap:wrap ;
+  text-decoration: none;
+}
+
+.xyz{
+  border: solid 1px black;
+  border-radius: 5px;
+  padding-top: 2px;
+  padding-right: 2px;
+  padding-left: 2px;
+  padding-bottom: 2px;
+  size: 10px;
+}
+.nk{
+  color: black;
+  text-decoration: none;
+  size: 10px;
+}
+
+.ig{
+  height: 40px;
+  width: 110px;
+}
+
+.catt
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+
+}
+
+.imgc{
+  height: 100px;
+  width: 140px;
+}
