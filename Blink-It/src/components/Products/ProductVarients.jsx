@@ -3,6 +3,7 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import CarouselButtonGroup from '../CarouselButtonGroup';
 
+
 const responsive = {
   lgdesktop: {
     breakpoint: { max: 1920, min: 1440 },
