@@ -1,20 +1,14 @@
 import React, { useState } from 'react';
+import { FiMapPin } from 'react-icons/fi'; // Import the location icon
+import './LocationPicker.css';
 
 const LocationPicker = () => {
-  const [location, setLocation] = useState(null);
+  const [location, setLocation] = useState("Mumbai");
 
   return (
-    <div>
-      {!location ? (
-        <span className="font-medium _text-default">Select Location</span>
-      ) : (
-        <div className="flex flex-col">
-          <p className="font-semibold text-lg leading-tight">
-            Delivery in Sometimes
-          </p>
-          <span className="text-sm _text-default">Your address will show here</span>
-        </div>
-      )}
+    <div className="locdiv">
+      <FiMapPin className="location-icon" size={24} /> {/* Location Icon */}
+      <h2 className="text-sm _text-default">{location}</h2>
     </div>
   );
 };
