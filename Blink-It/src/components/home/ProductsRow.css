@@ -1,0 +1,37 @@
+/* Premium ProductsRow Styles */
+.products-row-section {
+    margin-bottom: 3rem;
+  }
+  
+  .products-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+  
+  .products-header h2 {
+    font-size: 1.625rem; /* 26px */
+    font-weight: bold;
+    color: #333333;
+  }
+  
+  .products-header .view-all-link {
+    font-size: 1rem; /* 16px */
+    font-weight: bold;
+    color: gray;
+  }
+  
+  .products-header .view-all-link:hover {
+    color: gray;
+    margin-top: 3px;
+
+  }
+ 
+  .prd{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    margin-bottom: 4px;
+  }
+  

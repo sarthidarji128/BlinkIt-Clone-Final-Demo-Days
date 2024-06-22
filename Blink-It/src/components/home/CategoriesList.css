@@ -1,0 +1,70 @@
+  /* .grids{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      max-width: 2300px;
+      overflow: hidden; 
+      padding: 10px; 
+    }
+  
+
+  .h-48{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      overflow: hidden;
+      padding: 10px;
+      margin: 5px;
+      text-align: center;
+    }
+  
+
+    .cover-img{
+      height: 160px;
+      width: 120px;
+    }
+
+ */
+
+ .grids {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px; /* Optional: adds space between items */
+  max-width: 2300px; /* Optional: restricts the width of the container */
+  overflow: hidden; /* Ensures no scrollbar appears */
+  padding: 10px; /* Optional: adds padding inside the container */
+}
+
+.h-48 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  overflow: hidden;
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+}
+
+.cover-img {
+  height: 160px;
+  width: 120px;
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.cover-img:hover {
+  transform: scale(1.1); /* Scale up the image on hover */
+}
+
+/* Box that appears on image click */
+.image-box {
+  display: none; /* Hidden by default */
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.image-box.visible {
+  display: block; /* Display the box when it has the 'visible' class */
+}

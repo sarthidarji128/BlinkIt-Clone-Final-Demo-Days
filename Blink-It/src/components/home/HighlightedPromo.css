@@ -1,0 +1,52 @@
+/* Premium HighlightedPromo Carousel Styles */
+.highlighted-promo-section {
+    position: relative;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .carousel-container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .carousel-item {
+    position: relative;
+    height: 400px; /* Adjust height as needed */
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+ 
+  
+  .carousel-button-group {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .carousel-button {
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    margin: 0 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+  
