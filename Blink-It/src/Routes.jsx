@@ -3,6 +3,8 @@ import { Routes, Route } from 'react-router-dom';
 import { Home, Error404 } from './pages';
 import { Loader } from './components/shared';
 import Layout from './components/Layout';
+
+
 const ProductView = React.lazy(() => import('./pages/ProductView'));
 
 const AppWithRouting = () => {
@@ -17,10 +19,13 @@ const AppWithRouting = () => {
           </Suspense>
         }
       />
+
+
       <Route
         path="/not-found"
         element={<Layout noFooter={true} component={<Error404 />} />}
       />
+
       <Route
         path="*"
         element={<Layout noFooter={true} component={<Error404 />} />}
