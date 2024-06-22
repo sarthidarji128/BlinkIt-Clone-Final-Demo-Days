@@ -19,3 +19,4 @@ const uiSlice = createSlice({
 
 export default uiSlice.reducer;
 export const { showCart, hideCart } = uiSlice.actions;
+
